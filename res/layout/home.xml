@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#F5F5F5"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/title_menu"
+           
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+             android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/title_btn_bg"
+            android:src="@drawable/logo_menu_normal" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/title_menu"
+            android:text="首页"
+            android:textColor="#656565"
+            android:textSize="@dimen/title_text_size" />
+
+        <ImageButton
+            android:id="@+id/title_qrcode"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/title_btn_bg"
+            android:src="@drawable/title_photograph_normal" />
+
+        <ImageButton
+            android:id="@+id/title_search"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/title_qrcode"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/title_btn_bg"
+            android:src="@drawable/title_search_normal" />
+    </RelativeLayout>
+
+    <com.suki.widget.ScrollViewExtend
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <include layout="@layout/guide_home" />
+    </com.suki.widget.ScrollViewExtend>
+
+</LinearLayout>
